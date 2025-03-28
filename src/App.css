@@ -1,0 +1,49 @@
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;  /* Allows cards to wrap to the next line */
+  gap: 10px;  /* Spacing between cards */
+  justify-content: center;  /* Center the cards */
+  max-width: calc((150px + 10px) * 7); /* 6 (100) tarjetas + 5 (10) gaps entre las tarjetas y uno (10) despues de la ultima + bordes */
+}
+
+.card {
+  width: 150px;  /* Set width for each card */
+  height: 200px;  /* Set height for each card */
+  display: flex;
+  flex-direction: column;  /* Arrange image and text vertically */
+  justify-content: space-between;  /* Space between the image and the name */
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f0f0f0;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  padding: 10px;
+}
+
+.card img {
+  width: 100px;  /* Set image size */
+  height: 100px;  /* Set image size */
+  object-fit: cover;  /* Ensures image covers the space without distortion */
+  border-radius: 4px;
+}
+
+.card-name {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
